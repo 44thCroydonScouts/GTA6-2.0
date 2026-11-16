@@ -19,15 +19,15 @@
     <canvas id="gameCanvas" width="600" height="400"></canvas>
     
     <div class="controls">
-        <button class="btn" id="upBtn"> what do you think of that L</button>
-        <button class="btn" id="downBtn"> i win this is my perfect victor </button>
+        <button class="btn" id="upBtn"> This is down </button>
+        <button class="btn" id="downBtn"> This is up </button>
     </div>
 
     <script>
         // =====================================================================
         // 🛠️ SCOUT HACKER ZONE: WHAT CAN YOU CHANGE?
         // =====================================================================
-        let gameSpeed = 113250000;          // ☄️ HAZARD SPEED: How fast obstacles fly at you
+        let gameSpeed = 25;          // ☄️ HAZARD SPEED: How fast obstacles fly at you
         let gameDuration = 120;      // ⏱️ TIME: Survive for 120 seconds to win!
     
         // 🎨 THEME SETTINGS
@@ -44,8 +44,8 @@
         let score = 0;
         let timeLeft = gameDuration;
         let gameIsRunning = true;
-        let playerY = 180, playerSize = 2;
-        let hazardX = 600, hazardY = Math.random() * 350, hazardSize = 14000;
+        let playerY = 180, playerSize = 5;
+        let hazardX = 600, hazardY = Math.random() * 350, hazardSize = 67;
         let upPressed = false, downPressed = false;
 
         if (backgroundImageUrl !== "") {
